@@ -21,7 +21,7 @@
     float dc=0.0;
     
     RF24 radio(9,10)  ; // CNS, CE
-    const byte address = 0xf0f0f0f0c3;
+    const byte address = 0x7878787878LL;
       
     void setup(){      
       nh.initNode();

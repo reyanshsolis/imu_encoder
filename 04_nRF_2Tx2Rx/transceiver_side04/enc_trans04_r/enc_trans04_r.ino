@@ -11,7 +11,7 @@
 
 long int sampleNum = 1000; 
 float dc_offset = 0;
-const byte address = 0xf0f0f0f0c3;
+const byte address = 0x7878787878LL;
 long int predata[5] = {0,0,0,0,0};
 
 RF24 radio(9, 10); // CE, CSN Pins

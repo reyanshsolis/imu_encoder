@@ -8,7 +8,7 @@ Link to git_repo ::
  [inertial_sensor](https://github.com/reyanshsolis/imu_encoder.git)
  [gyro_filter](https://github.com/reyanshsolis/gyro_filter.git)
 
-[Link](https://drive.google.com/drive/folders/1lIECSTog7db8Fpb0fIVhElLElcQSb51u) : RAW BAG Files 
+[Link](https://drive.google.com/drive/folders/1lIECSTog7db8Fpb0fIVhElLElcQSb51u) RAW BAG Files 
 
 [Link](https://drive.google.com/open?id=1SxP2YKimKd4hqK0ZQKdy-GLh4WCUiB7t) to Google Drive::contains bag files, research papers, results
 
@@ -55,7 +55,7 @@ __________________________________________________________________
 			different channel of nRF.
 			This however didn't show any significant improvement as even for
 			this the code takes the address of the pipe as Identifier.
-	Mode 3: uses Mode 1 with Mapped output. 
+	Mode 3: uses Mode 1: with Mapped output. 
 	Mode 4: uses Mode 3: plus using Separate reciever for separate
 			transciever for	improving data transmision rate (2Rx for 2Tx)
 			This is the final code that is to be used for transmitting raw 
