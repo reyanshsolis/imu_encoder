@@ -1,24 +1,26 @@
-# imu_encoder
-ODOMETRY USING A WHEEL MOUNTED INERTIAL SENSOR 
+## imu_encoder
+#ODOMETRY USING A WHEEL MOUNTED INERTIAL SENSOR 
 
 _________________________________________________________________
 Reference ::
 
 Link to git_repo ::
+ [inertial_sensor](https://github.com/reyanshsolis/imu_encoder.git)
+ [gyro_filter](https://github.com/reyanshsolis/gyro_filter.git)
 
-	inertial_sensor : https://github.com/reyanshsolis/imu_encoder.git
-	gyro_filter : https://github.com/reyanshsolis/gyro_filter.git
+[Link](https://drive.google.com/drive/folders/1lIECSTog7db8Fpb0fIVhElLElcQSb51u) : RAW BAG Files 
 
-Link to Google Drive::contains bag files, research papers, results::
-https://drive.google.com/open?id=1SxP2YKimKd4hqK0ZQKdy-GLh4WCUiB7t
+[Link](https://drive.google.com/open?id=1SxP2YKimKd4hqK0ZQKdy-GLh4WCUiB7t) to Google Drive::contains bag files, research papers, results
+
+Credits: Rishabh Singh and Shubham Sahoo
 __________________________________________________________________
 
 
-WHEEL MOUNTED INERTIAL SENSOR :
+##WHEEL MOUNTED INERTIAL SENSOR :
 
-Transmition Module: 
-	1.nRF: Initially nRF was being used for transmitting data from Encoder to Microprocessor which then publishes RAW data on a topic /enc_left (left encoder values) and /enc_right (right encoder values) on ROS which is suscribed by kalman.cpp and noise.py 
-	nRF was used in different modes to observe and obtain the most efficient mode of communication:
+###Transmition Module: 
+   1.nRF: Initially nRF was being used for transmitting data from Encoder to Microprocessor which then publishes RAW data on a topic /enc_left (left encoder values) and /enc_right (right encoder values) on ROS which is suscribed by kalman.cpp and noise.py 
+   nRF was used in different modes to observe and obtain the most efficient mode of communication:
 	basic data sent by nRF : 
 		identifier bit
 		 (to inform if the data is coming from Left or Right Encoder)
@@ -49,7 +51,7 @@ Transmition Module:
 	So it was decided to move to Zigbee for further experimentation.
 	(All the bag files/ data/ observations till 16th October are based on reading with nRF used for wireless communication)	
 	
-	2. Zigbee: to be tested
+   2. Zigbee: to be tested
 
 ISSUES AND SOLUTION : 
 	
@@ -61,5 +63,5 @@ ISSUES AND SOLUTION :
     	It was solved using working by creating a new workspace in ROS.
 
 
-DATA BIAS CORRECTION AND NOISE REMOVAL : https://github.com/reyanshsolis/gyro_filter.git
+DATA BIAS CORRECTION AND NOISE REMOVAL : [LINK](https://github.com/reyanshsolis/gyro_filter.git)
 _________________________________________________________________
