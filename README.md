@@ -1,5 +1,5 @@
 ## imu_encoder
-#ODOMETRY USING A WHEEL MOUNTED INERTIAL SENSOR 
+# ODOMETRY USING A WHEEL MOUNTED INERTIAL SENSOR 
 
 _________________________________________________________________
 Reference ::
@@ -16,9 +16,9 @@ Credits: Rishabh Singh and Shubham Sahoo
 __________________________________________________________________
 
 
-##WHEEL MOUNTED INERTIAL SENSOR :
+## WHEEL MOUNTED INERTIAL SENSOR :
 
-###Transmition Module: 
+### Transmition Module: 
    1.nRF: Initially nRF was being used for transmitting data from Encoder to Microprocessor which then publishes RAW data on a topic /enc_left (left encoder values) and /enc_right (right encoder values) on ROS which is suscribed by kalman.cpp and noise.py 
    nRF was used in different modes to observe and obtain the most efficient mode of communication:
 	basic data sent by nRF : 
@@ -53,7 +53,7 @@ __________________________________________________________________
 	
    2. Zigbee: to be tested
 
-ISSUES AND SOLUTION : 
+## ISSUES AND SOLUTION : 
 	
 	***(1): Encoder if not placed Verticle to the Ground, The reading has an angular component, which adds to significant error specially at turning and on high speeds.
 	Presently the problem is avoided for a while by keeping it parallel to the wheel.rrallelallel
