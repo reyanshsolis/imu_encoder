@@ -19,7 +19,8 @@ __________________________________________________________________
 ## WHEEL MOUNTED INERTIAL SENSOR :
 
 ### Transmition Module: 
-   ### 1.nRF: Initially nRF was being used for transmitting data from Encoder 
+   ### 1.Using nRF: 
+   Initially nRF was being used for transmitting data from Encoder 
    to Microprocessor which then publishes RAW data on a topic /enc_left (left 
    encoder values) and /enc_right (right encoder values) on ROS which is 
    suscribed by kalman.cpp and noise.py 
@@ -67,7 +68,7 @@ __________________________________________________________________
 	(All the bag files/ data/ observations till 16th October are based on 
 	reading with nRF used for wireless communication)	
 	
-   ### 2. Zigbee: to be tested
+   ### 2. Using Zigbee: <Yet to be tested>
 
 ## ISSUES AND SOLUTION : 
 	
