@@ -19,20 +19,20 @@ __________________________________________________________________
 ## WHEEL MOUNTED INERTIAL SENSOR :
 
 ### Transmition Module: 
-   # 1.nRF: Initially nRF was being used for transmitting data from Encoder 
+   ### 1.nRF: Initially nRF was being used for transmitting data from Encoder 
    to Microprocessor which then publishes RAW data on a topic /enc_left (left 
    encoder values) and /enc_right (right encoder values) on ROS which is 
    suscribed by kalman.cpp and noise.py 
    nRF was used in different modes to observe and obtain the most efficient 
    mode of communication:
 	
-	basic data sent by nRF : 
+	Basic data sent by nRF : 
 		identifier bit
 		 (to inform if the data is coming from Left or Right Encoder)
 		dc_offset
 		 (calculated by mean avg. by keeping the encoder at  rest for 5sec.)
 		gyro data : gx gy gz(used for calculating yaw)
-	link of the Code for Mode 0,1,2,3 
+ 
 	
 	Mode 0: 
 		data was sent as an array, with data[0]->identifier, data[1]-> yaw
@@ -67,7 +67,7 @@ __________________________________________________________________
 	(All the bag files/ data/ observations till 16th October are based on 
 	reading with nRF used for wireless communication)	
 	
-    # 2. Zigbee: to be tested
+   ### 2. Zigbee: to be tested
 
 ## ISSUES AND SOLUTION : 
 	
