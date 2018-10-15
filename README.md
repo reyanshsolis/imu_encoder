@@ -3,7 +3,9 @@ ODOMETRY USING A WHEEL MOUNTED INERTIAL SENSOR
 
 _________________________________________________________________
 Reference ::
+
 Link to git_repo ::
+
 	inertial_sensor : https://github.com/reyanshsolis/imu_encoder.git
 	gyro_filter : https://github.com/reyanshsolis/gyro_filter.git
 
@@ -31,7 +33,8 @@ Transmition Module:
 		As for further experimentaion all gx gy gz was needed,
 		data was sent as data[0]->Identifier+dc_offset
 		data[1]->gx data[2]->gy data[3]->gz
-		 To Identify Left and Right Side and get DC Offset: float data[4] is transmitted from Encoder, data[0] contains the information of side and dc_offset. data[0] = 8500+dc_offset for Left Encoder. (So int(data[0])/1000==8 for Left) data[0] = 6500+dc_offset for Right Encoder. (So int(data[0])/1000==6 for Right)
+		 To Identify Left and Right Side and get DC Offset: float data[4] is transmitted from Encoder, data[0] contains the information of side and dc_offset. data[0] = 8500+dc_offset for Left Encoder. 
+		 (So int(data[0])/1000==8 for Left) data[0] = 6500+dc_offset for Right Encoder. (So int(data[0])/1000==6 for Right)
 	Mode 2:
 		Using Multiple Pipes of nRF
 			Left and Right Encoder data was simultaneously published to different channel of nRF.
@@ -49,6 +52,7 @@ Transmition Module:
 	2. Zigbee: to be tested
 
 ISSUES AND SOLUTION : 
+	
 	***(1): Encoder if not placed Verticle to the Ground, The reading has an angular component, which adds to significant error specially at turning and on high speeds.
 	Presently the problem is avoided for a while by keeping it parallel to the wheel.rrallelallel
 		The problem is yet to be solved by considering Angular Component and changes due to it.
